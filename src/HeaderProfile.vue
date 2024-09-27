@@ -2,8 +2,6 @@
 import IconLinkedin from '@/components/icons/IconLinkedin.vue';
 import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 import IconGithub from '@/components/icons/IconGithub.vue';
-import IconMedium from '@/components/icons/IconMedium.vue';
-import IconDribbble from '@/components/icons/IconDribbble.vue';
 
 interface SocialMedia {
   link: string;
@@ -14,63 +12,47 @@ interface SocialMedia {
 }
 
 const socialMedia: SocialMedia[] = [
-  { link: 'https://vahid-mohammadi.ir', icon: 'language', class: 'contacts-contact-info' },
+  { link: 'https://ganji.blog', icon: 'language', class: 'contacts-contact-info' },
   {
-    link: 'https://www.linkedin.com/in/vahidmohammadi/',
+    link: 'https://www.linkedin.com/in/mohganji/',
     iconComponent: IconLinkedin,
     ariaLabel: 'LinkedIn',
     class: 'contacts-social-media',
   },
   {
-    link: 'https://stackoverflow.com/users/1889607/vahid/',
+    link: 'https://stackoverflow.com/users/7025986/ganjim',
     iconComponent: IconStackoverflow,
     ariaLabel: 'StackOverFlow',
     class: 'contacts-social-media',
   },
   {
-    link: 'https://vmoh.medium.com/',
-    iconComponent: IconMedium,
-    ariaLabel: 'Medium articles',
-    class: 'contacts-social-media',
-  },
-  {
-    link: 'https://github.com/vmohir',
+    link: 'https://github.com/mohganji',
     iconComponent: IconGithub,
     ariaLabel: 'GitHub',
-    class: 'contacts-social-media',
-  },
-  {
-    link: 'https://dribbble.com/vmoh_ir',
-    iconComponent: IconDribbble,
-    ariaLabel: 'Dribbble Designs',
     class: 'contacts-social-media',
   },
 ];
 
 const yearsOfExperience = (
-  (Date.now() - new Date('2017-05-01').getTime()) /
-  (1000 * 60 * 60 * 24 * 365.25)
-).toFixed();
-const yearsOfLeadershipExperience = (
-  (Date.now() - new Date('2020-04-01').getTime()) /
-  (1000 * 60 * 60 * 24 * 365.25)
+  ((Date.now() - new Date('2017-05-01').getTime()) /
+  (1000 * 60 * 60 * 24 * 365.25)) - 2
 ).toFixed();
 </script>
 
 <template>
   <header>
     <div class="avatar-wrapper">
-      <img alt="Avatar" class="avatar" src="./assets/avatar.jpeg" width="100" height="100" />
+      <img alt="Avatar" class="avatar" src="./assets/avatar.png" width="100" height="100" />
     </div>
 
-    <h1 class="resume-name">Vahid Mohammadi</h1>
+    <h1 class="resume-name">Mohammad Ganji</h1>
 
     <div class="contact-info">
-      <a href="mailto:vahidm1467@gmail.com" class="contacts-contact-info">
-        <span class="material-symbols-outlined">mail</span><span>vahidm1467@gmail.com</span>
+      <a href="mailto:mo@ganji.blog" class="contacts-contact-info">
+        <span class="material-symbols-outlined">mail</span><span>mo@ganji.blog</span>
       </a>
-      <a href="tel:+447495192782" class="contacts-contact-info">
-        <span class="material-symbols-outlined">call</span><span>+447495192782</span>
+      <a href="tel:+17789575657" class="contacts-contact-info">
+        <span class="material-symbols-outlined">call</span><span>+17789575657</span>
       </a>
     </div>
     <!--    <div class="contacts">-->
@@ -85,10 +67,8 @@ const yearsOfLeadershipExperience = (
 
     <div class="summary">
       <p>
-        Front-end engineer with {{ yearsOfExperience }} years of experience, including
-        {{ yearsOfLeadershipExperience }} years as a leader in enterprise companies, with a keen
-        focus on UI/UX design and mobile app development. Angular contributor and open-source
-        enthusiast.
+        Well-rounded software engineer with {{ yearsOfExperience }} years of experience in build,
+        deployment, scale, and maintenance of reliable software systems.
       </p>
     </div>
   </header>
@@ -148,7 +128,7 @@ header {
     right: 0;
     left: 0;
     bottom: 0;
-    box-shadow: inset 0 0 0 3px rgb(0 0 0 / 3%);
+    // box-shadow: inset 0 0 0 3px rgb(0 0 0 / 3%);
     border-radius: 4px;
   }
   .avatar {

@@ -2,37 +2,34 @@
 import type { Skill } from '@/models/skill';
 import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
-const skills: Skill[] = [
-  { name: 'HTML CSS', since: 2014, topPercentileInStackoverflow: 10 },
-  { name: 'JavaScript TypeScript', since: 2016, topPercentileInStackoverflow: 10 },
-  {
-    name: 'Angular',
-    since: 2017,
-    topPercentileInStackoverflow: 5,
-    // badge: 'bronze',
-    badgeLink: 'https://stackoverflow.com/help/badges/6902/angular?userid=1889607',
-  },
-  { name: 'React', since: 2019 },
-];
 // prettier-ignore
 const otherSkills: string[] = [
-  'HTML5', 'CSS3', 'JS', 'TS',
-  'SCSS',
-  'Svelte',
-  'Webpack', 'Vite', 'Rollup',
-  'SVG',
-  'Gatsby',
-  'Node.js', 'MongoDB',
-  'GraphQL',
-  'CI/CD',
-  'Regex',
-  'Redux',
-  'Flutter',
-  'RxJS',
-  'NgRx',
-  'Jest', 'Nx', 'Cypress', 'Jasmine', 'Karma',
+  'Node.js',
+  'MongoDB',
   'Bash',
-  'Storybook',
+  'CI/CD', 
+  'Python',
+  'Docker',
+  'ChromaDB', 'MilvusDB',
+  'Redis', 'PostgreSQL', //'SQLite', 
+  // 'Java',
+  // 'CI/CD', 
+  'AWS', //'Cloud Storage', //'Github-Actions',
+  // 'MongoDB', 
+  // 'Linux', 'Bash', 
+  // 'Cloud Deployment', 
+  // 'IDP', 'DRM',
+  // 'Object Oriented Design', 'Functional Programming',
+  'MQTT', 'WebSocket', //'RTSP', 'On-prem deployment', 
+  'Nginx', 'Sentry', // 'Metabase',
+  'Grafana', 
+  'Django', 
+  // 'Rest API', 
+  'Microservices',  
+  'HTML', 'CSS', 'JS', 'TS', 'GraphQL',
+  'React', // 'JQuery', 
+  // 'ExpressJS', 'Mongoose',
+  // 'Jest', 'PyTest', 'Mocha', 'Node Tap',
 ];
 
 function calculateYears(year: number) {
@@ -43,23 +40,6 @@ function calculateYears(year: number) {
 <template>
   <div class="skills-list-wrapper">
     <h2 class="section-title">Skills</h2>
-    <ul class="skills-list">
-      <li v-for="s of skills" :key="s.name" class="skill">
-        <div class="skill-name">{{ s.name }}</div>
-        <a v-if="s.badge" :class="'badge badge-' + s.badge" :href="s.badgeLink" target="_blank">{{
-          s.badge
-        }}</a>
-        <div
-          v-if="s.topPercentileInStackoverflow"
-          class="top-percentile"
-          :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
-        >
-          Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
-          <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
-        </div>
-        <div class="skill-years">{{ calculateYears(s.since) }}+ Years</div>
-      </li>
-    </ul>
     <ul class="other-skills">
       <li v-for="s of otherSkills" :key="s">
         <span>{{ s }}</span>
@@ -72,68 +52,6 @@ function calculateYears(year: number) {
 .skills-list-wrapper {
   @media print {
     break-inside: avoid;
-  }
-}
-.skills-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.skill {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-.skill-name {
-  font-weight: 600;
-  font-family: var(--font-title);
-}
-.skill-years {
-  margin-inline-start: auto;
-}
-.top-percentile {
-  margin-inline-start: 0.75rem;
-  //margin-inline-start: auto;
-  color: var(--text-3);
-  opacity: 0.5;
-
-  .percentile {
-    color: #000;
-    opacity: 0.8;
-  }
-
-  .stackoverflow-icon {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    margin-inline-start: 0.25rem;
-  }
-}
-.badge {
-  padding: 0.25rem;
-  line-height: 11px;
-  font-size: 14px;
-  border-radius: 4px;
-  color: var(--text-3);
-  background: #eee;
-  margin-inline-start: 0.5rem;
-  cursor: pointer;
-  white-space: nowrap;
-  &::before {
-    content: '';
-    vertical-align: 1px;
-    margin-inline-end: 0.25rem;
-    width: 6px;
-    height: 6px;
-    border-radius: 10px;
-    background-color: #666666;
-    display: inline-block;
-  }
-  &.badge-bronze {
-    &::before {
-      background: #c27300;
-    }
   }
 }
 

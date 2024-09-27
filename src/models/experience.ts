@@ -14,6 +14,16 @@ export interface WorkPositionModel {
   desc: string;
 }
 
+export interface EducationModel {
+  icon: any;
+  name: string;
+  country: string;
+  degree: string;
+  start: YearMonth;
+  end?: YearMonth;
+  desc: string;
+  hideInResume?: boolean;
+}
 export interface YearMonth {
   month: string;
   year: string;

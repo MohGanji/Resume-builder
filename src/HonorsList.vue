@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import StackoverflowWidget from '@/components/StackoverflowWidget.vue';
+import StackoverflowSmall from '@/components/StackoverflowSmall.vue';
 import LinkedinRecoms from '@/components/LinkedinRecoms.vue';
-import ReactContest from '@/components/ReactContest.vue';
-import Languages from '@/components/Languages.vue';
 </script>
 
 <template>
@@ -10,9 +8,8 @@ import Languages from '@/components/Languages.vue';
     <h2 class="section-title">Honors</h2>
     <StackoverflowWidget />
     <div class="mt-75">
-      <ReactContest />
+      <StackoverflowSmall />
       <LinkedinRecoms />
-      <Languages />
     </div>
   </div>
 </template>

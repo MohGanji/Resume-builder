@@ -1,115 +1,143 @@
-import TapsellLogo from '@/assets/tapsell.png';
-import Mastermind from '@/assets/mastermind-logo.png';
-import Huma from '@/assets/humaforhealth_logo.jpeg';
-import Klassroom from '@/assets/klassroom.jpeg';
-import type { WorkExperienceModel } from '@/models/experience';
-
-// When I joined Huma, the frontend team was remote and disconnected. I brought the team together, established coding standards, implemented code review processes, and automated workflows. We managed to refactor the project and proactively improved the code style making it more consistent.
-// "When I joined Huma, I unified the previously remote and disconnected frontend team by establishing cohesive coding standards, implementing robust code review processes, and automating workflows. This resulted in a successful project refactoring and proactive improvement of code style consistency.
+import YektanetLogo from '@/assets/yektanet-logo.png';
+import PheebsLogo from '@/assets/pheebs-logo.jpeg';
+import UTLogo from '@/assets/university-of-tehran.jpeg';
+import SFULogo from '@/assets/sfu-logo-square.png';
+import AuperaLogo from '@/assets/aupera-logo.png';
+import SchemaIranLogo from '@/assets/schemairan-logo.jpg';
+import type { WorkExperienceModel, EducationModel } from '@/models/experience';
 
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
-    icon: Huma,
-    company: 'Huma',
-    country: 'London, UK',
+    icon: AuperaLogo,
+    company: 'Aupera Technologies Inc.',
+    country: 'Vancouver, CA',
     type: 'full-time',
     positions: [
       {
-        title: 'Lead Frontend Engineer',
-        start: { month: '11', year: '2022' },
+        title: 'Software Team Lead',
+        start: { month: '06', year: '2024' },
+        end: { month: '09', year: '2024' },
         desc: `
 <ul>
-<li>Unified the remote and disconnected frontend teams and Led a team of 15-20 frontend engineers</li>
-<li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, and CI time by 86%</li>
-<li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configurations and optimising assets</li>
-<li>Crafted 10+ pages of coding guidelines and process docs and established personalised growth roadmaps</li>
-<li>Managed 3+ frontend React and Angular Typescript mono-repository projects, including internal NPM packages</li>
-<li>Engineered an automated workflow, reducing task completion time by 50%, handling development, QA, and deployment</li>
+  <li>Led a team of 5 in building an AI-powered NVR software capable of real-time detection and natural language video search from the ground up to a sellable state in 4 months</li>
+  <li>Drove the architectural planning of key features such as Licensing, real-time notification, and integration of vector databases</li>
+  <li>Streamlined development by prioritizing tasks, reviewing 100+ PRs, and implementing automations to enhance team efficiency</li>
+</ul>`,
+      },
+      {
+        title: 'Software Engineer',
+        start: { month: '03', year: '2023' },
+        end: { month: '06', year: '2024' },
+        desc: `
+<ul>
+  <li>Architected and implemented the data flow of an on-premise MLOps solution to streamline and automate continuous data collection, model retraining, and model deployment of a license plate recognition service</li>
+  <li>Designed and maintained a self-hosted CI/CD pipeline (GitHub Actions), fully automating testing of video streaming framework</li>
+  <li>Led the backend development of Video Streaming AI framework including IdP, MongoDB, RTSP video streams, 3rd party integrations, docker-compose deployment, and event based notification systems</li>
+  <li>Guided customers with technical support and documentations for testing and deployment of the MLOps solution</li>
 </ul>`,
       },
     ],
   },
   {
-    icon: TapsellLogo,
-    company: 'Tapsell',
+    icon: SchemaIranLogo,
+    company: 'SchemaIran Schematherapy Center',
+    country: 'Remote',
+    type: 'Contract Job',
+    hideInResume: true,
+    positions: [
+      {
+        title: 'Software Developer',
+        start: { month: '09', year: '2021' },
+        end: { month: '03', year: '2022' },
+        desc: `
+<ul>
+  <li>Developed a Telegram bot for Schemairan clinic to conduct YSQ tests online. Collected and Analyzed 10k+ test results</li>
+</ul>`,
+      },
+    ],
+  },
+  {
+    icon: SFULogo,
+    company: 'CSIL - SFU',
+    country: 'Canada',
+    type: 'Contract Job',
+    hideInResume: true,
+    positions: [
+      {
+        title: 'Software Developer',
+        start: { month: '06', year: '2021' },
+        end: { month: '09', year: '2021' },
+        desc: `
+<ul>
+  <li>Revamped Web server and client of CSIL in-lab test scheduling automation using JS and PostgreSQL</li>
+</ul>`,
+      },
+    ],
+  },
+  {
+    icon: YektanetLogo,
+    company: 'Yektanet - Digital Advertising Platform',
     country: 'Iran',
     type: 'full-time',
     positions: [
       {
-        title: 'Director of Technical Operations',
-        start: { month: '3', year: '2022' },
-        end: { month: '9', year: '2022' },
+        title: 'Intermediate Software Engineer',
+        start: { month: '12', year: '2019' },
+        end: { month: '12', year: '2020' },
         // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
-<li>Facilitated technical operations including onboarding, communication, knowledge sharing, code quality, and handover</li>
-<li>Directed tech teams in workflow, communication, and documentation automating 10+ complex internal processes</li>
-<li>Created CLI tools and chat bots with Node.js and implemented CI/CD pipelines</li>
+  <li>Scaled and refactored a legacy push notification service from 5M to 100M daily pushes, driving 15x revenue growth in 1 year</li>
+  <li>Optimized large-scale PostgreSQL and Redis databases (40M+ users), reducing critical query times by 80%</li>
+  <li>Built log management pipelines using ELK stack (Elasticsearch, Logstash, Kibana) which cut debugging time in half</li>
+  <li>Interviewed 5 candidates, coached 3 interns, reviewed 50+ resumes and 50+ technical tasks</li>
 </ul>`,
       },
+    ],
+  },
+  {
+    icon: PheebsLogo,
+    company: 'Pheebs - Entertainment Mobile Apps',
+    country: 'Iran',
+    type: 'part-time',
+    // hideInResume: true,
+    positions: [
       {
-        title: 'Frontend Chapter Lead',
-        start: { month: '7', year: '2019' },
-        end: { month: '2', year: '2022' },
-        // <p>I joined Tapsell as a junior front-end developer and as the company was growing I managed to gain trust and create a front-end chapter (we were only 2 front-end developers at the time) later by growing my team I had a huge impact on the quality of work in front-end teams of Tapsell.</p>
-        desc: `
-<ul>
-<li>Led the frontend chapter of 20+ Angular, React, and Vue web developers in more than 5 products working as agile teams</li>
-<li>Conducted interviews and hired 10+ frontend engineers and coached 10+ interns</li>
-<li>Maintained 10+ frontend (React, Angular, Vue 3 and Typescript) SSR, PWA, and complex analytical dashboards</li>
-<li>Spearheaded the development of a full-featured Angular library for internal design system including an SSO platform</li>
-</ul>
-`,
-        // <p>Our front-end developers were working in separate teams without any interactions. By conducting weekly knowledge-sharing meetings and cross-team code review sessions, I was able to create a connected and targeted team. Besides, by creating a shared mono-repo library not only did we skip a lot of repeated work, but also we had more interactions as we were all working on the same project.</p
-      },
-      {
-        title: 'Senior Frontend Engineer',
-        start: { month: '10', year: '2017' },
+        title: 'Full-Stack Developer',
+        start: { month: '09', year: '2017' },
         end: { month: '12', year: '2019' },
-        // <p>I worked in 3 different teams, designed UIs, implemented front-end projects from scratch, and hired developers</p>
         desc: `
-<ul>
-<li>Designed the UI and implemented 6 analytical Angular and React data visualisation panels</li>
-<li>Developed 3 SSG documentation platforms with React + Gatsby and 2 ad-serving SDKs using Webpack + Svelte</li>
-<li>Drafted testing projects, Interviewed and mentored 5 front-end interns in React and Angular</li>
-<li>Set up full CI and tooling for linting and deployment using GitLab CI, ESLint, and Stylelint for 10+ frontend projects</li>
-</ul>`,
-      },
-    ],
-  },
-  {
-    icon: Mastermind,
-    company: 'Teetap',
-    country: 'Canada',
-    type: 'part-time freelance',
-    hideInResume: true,
-    positions: [
-      {
-        title: 'Flutter Developer',
-        start: { month: '2', year: '2020' },
-        desc: `
-        <p>A small team of friends working on two Flutter mobile games:</p>
-`,
-        // <ul>
-        // <li>Mastermind Pro: a game based on the classic Mastermind</li>
-        // <li>Abalone: an Abalone game for Android and iOS</li>
-        // </ul>
-      },
-    ],
-  },
-  {
-    icon: Klassroom,
-    company: 'Klassroom',
-    country: 'Canada',
-    type: 'contract remote',
-    hideInResume: true,
-    positions: [
-      {
-        title: 'Senior Frontend Engineer',
-        start: { month: '6', year: '2020' },
-        end: { month: '12', year: '2020' },
-        desc: `<ul><li>Developed two LMS panels with Angular with custom internal design system</li></ul>`,
+        <ul>
+        <li>Led backend development for two mobile apps, built from scratch with GraphQL, Node.js, MongoDB, Docker, Nginx, and Redis</li>
+        </ul>`,
       },
     ],
   },
 ];
+
+
+export const EDUCATION_EXPERIENCES: EducationModel[] = [
+  {
+    icon: SFULogo,
+    name: 'Simon Fraser University',
+    country: 'Canada',
+    degree: "Thesis Based Master's Degree",
+    start: { month: '09', year: '2020' },
+    end: { month: '05', year: '2023' },
+    desc: `
+<ul>
+  <li>Published "Code Coverage Criteria for Asynchronous Programs"; Mohammad Ganji, Saba Alimadadi, Frank Tip (ESEC/FSE’23)</li>
+</ul>`,
+    // hideInResume: true,
+  },
+  {
+    icon: UTLogo,
+    name: 'University of Tehran',
+    country: 'Iran',
+    degree: "Bachelor's Degree",
+    start: { month: '09', year: '2015' },
+    end: { month: '01', year: '2020' },
+    desc: ``,
+    // hideInResume: true,
+  },
+]
