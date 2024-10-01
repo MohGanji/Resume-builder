@@ -41,9 +41,9 @@ const yearsOfExperience = (
 
 <template>
   <header>
-    <div class="avatar-wrapper">
+    <!-- <div class="avatar-wrapper">
       <img alt="Avatar" class="avatar" src="./assets/avatar.png" width="100" height="100" />
-    </div>
+    </div> -->
 
     <h1 class="resume-name">Mohammad Ganji</h1>
 
@@ -68,7 +68,7 @@ const yearsOfExperience = (
     <div class="summary">
       <p>
         Well-rounded software engineer with {{ yearsOfExperience }} years of experience in build,
-        deployment, scale, and maintenance of reliable software systems.
+        deployment, scale, and maintenance of reliable systems.
       </p>
     </div>
   </header>
@@ -81,29 +81,29 @@ $size-sm: 540px;
 $size-xs: 500px;
 header {
   display: grid;
-  grid-template-areas: 'avatar name contacts social' 'avatar summary summary summary';
+  grid-template-areas: 'name contacts social' 'summary summary summary';
   grid-template-rows: auto 1fr;
   grid-template-columns: auto auto 1fr;
   margin: 0 0 1.5rem;
   @media (max-width: $size-lg) {
-    grid-template-areas: 'avatar name contacts contacts' 'avatar summary summary social';
+    grid-template-areas: 'name contacts contacts' 'summary summary social';
     grid-template-rows: auto 1fr;
     grid-template-columns: auto auto 1fr auto;
   }
   @media (max-width: $size-md) {
-    grid-template-areas: 'avatar name social' 'avatar contacts contacts' 'avatar summary summary';
+    grid-template-areas: 'name social' 'contacts contacts' 'summary summary';
     grid-template-rows: auto auto 1fr;
     grid-template-columns: auto auto 1fr;
     margin: 0 0 1rem;
   }
   @media (max-width: $size-sm) {
-    grid-template-areas: 'avatar name' 'avatar contacts' 'avatar social' 'summary summary';
+    grid-template-areas: 'name' 'contacts' 'social' 'summary summary';
     grid-template-rows: auto auto auto 1fr;
     grid-template-columns: auto 1fr;
     margin: 0 0 0.5rem;
   }
   @media (max-width: $size-xs) {
-    grid-template-areas: 'avatar name' 'avatar social' 'contacts contacts' 'summary summary';
+    grid-template-areas: 'name' 'social' 'contacts contacts' 'summary summary';
     grid-template-rows: auto auto auto 1fr;
     grid-template-columns: auto 1fr;
     margin: 0 0 0.5rem;
