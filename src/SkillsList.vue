@@ -4,32 +4,65 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
 // prettier-ignore
 const otherSkills: string[] = [
-  'Node.js',
-  'MongoDB',
-  'Bash',
-  'CI/CD', 
-  'Python',
+  'Python', 
+  'Node.js', 
+  'Django',
+  'Redis',
+  'AWS', // 'Azure',
+  'NoSQL',
   'Docker',
-  'ChromaDB', 'MilvusDB',
-  'Redis', 'PostgreSQL', //'SQLite', 
+  
+  // 'Express', 
+  'PostgreSQL', //'MySQL', //'SQLite', 
+  'GraphQL', 'REST', // 'Linux',
+  'CI/CD', 
+  // 'VectorDB', // 'ChromaDB', 'MilvusDB',
+  
+  'Bash',
+  'WebSocket', //'RTSP', 'On-prem deployment', 
+  'Java',
+  'Gitlab CI',
+  // 'Django',
+  // 'Instructor',  
+  // 'Label Studio',
+  // 'GitHub Actions', 
+  
+  //'Cloud Storage', //'Github-Actions',
+  
+  // 'NoSQL', 
+  // 'MongoDB',
+  // 'DevOps',
+  
+  
+  // 'Nginx',
+  
   // 'Java',
-  // 'CI/CD', 
-  'AWS', //'Cloud Storage', //'Github-Actions',
   // 'MongoDB', 
   // 'Linux', 'Bash', 
-  // 'Cloud Deployment', 
   // 'IDP', 'DRM',
   // 'Object Oriented Design', 'Functional Programming',
-  'MQTT', 'WebSocket', //'RTSP', 'On-prem deployment', 
-  'Nginx', 'Sentry', // 'Metabase',
-  'Grafana', 
-  'Django', 
-  // 'Rest API', 
-  'Microservices',  
-  'HTML', 'CSS', 'JS', 'TS', 'GraphQL',
-  'React', // 'JQuery', 
-  // 'ExpressJS', 'Mongoose',
-  // 'Jest', 'PyTest', 'Mocha', 'Node Tap',
+  // 'Microservices',  
+  // 'Sentry', // 'Metabase',
+  'Cloud Deployment', 
+  'Documentation',
+  'MQTT', 
+  'Distributed Systems',
+  
+  // 'Grafana',
+  
+  // 'Grafana', 
+  
+  // 'HTML', 'CSS', 
+  'Test',
+  'TS',
+  'JS', 
+  'React', 
+  // 'TypeScript',
+  // 'Express', 
+  // 'Mongoose',
+  // 'Jest', 
+  // 'PyTest',
+  // 'Mocha', 'Node Tap',
 ];
 
 function calculateYears(year: number) {

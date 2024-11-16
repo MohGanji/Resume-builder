@@ -9,32 +9,37 @@ import type { WorkExperienceModel, EducationModel } from '@/models/experience';
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
     icon: AuperaLogo,
-    company: 'Aupera Technologies Inc.',
+    company: 'Aupera Technologies Inc. - Multimodal AI on Edge',
     country: 'Vancouver, CA',
     type: 'full-time',
     positions: [
-      {
-        title: 'Software Team Lead',
-        start: { month: '06', year: '2024' },
-        end: { month: '09', year: '2024' },
-        desc: `
-<ul>
-  <li>Led a team of 5 in building an AI-powered NVR software capable of real-time detection and natural language video search from the ground up to a sellable state in 4 months</li>
-  <li>Drove the architectural planning of key features such as Licensing, real-time notification, and integration of vector databases</li>
-  <li>Streamlined development by prioritizing tasks, reviewing 100+ PRs, and implementing automations to enhance team efficiency</li>
-</ul>`,
-      },
+//       {
+//         title: 'Tech Lead',
+//         start: { month: '06', year: '2024' },
+//         end: { month: '10', year: '2024' },
+//         // (Investor fundings were cut)
+//         desc: `
+// <ul>
+//   <li>Led a team of 5 in building a NVR software powered by Multimodal LLM capable of real-time detection and natural language video search from the ground up to a sellable state in 4 months</li>
+//   <li>Communicated with management to clarify requirements and break down objectives into actionable tasks and estimates</li>
+//   <li>Drove the system design of key features such as Licensing, real-time notification, and integration of vector databases</li>
+//   </ul>`,
+//   // <li>Implemented features such as vector similarity search for live video streams and dynamic sensitivity for prompt-based detection</li>
+//   // <li>Streamlined development by prioritizing tasks, reviewing 100+ PRs, and implementing automations to enhance team efficiency</li>
+//       },
       {
         title: 'Software Engineer',
         start: { month: '03', year: '2023' },
-        end: { month: '06', year: '2024' },
+        end: { month: '10', year: '2024' },
+        // <li>Automated data transform and export of detection and label data into Label Studio</li>
         desc: `
-<ul>
-  <li>Architected and implemented the data flow of an on-premise MLOps solution to streamline and automate continuous data collection, model retraining, and model deployment of a license plate recognition service</li>
-  <li>Designed and maintained a self-hosted CI/CD pipeline (GitHub Actions), fully automating testing of video streaming framework</li>
+  <ul>
+  <li>Drove the system design in building a NVR software powered by Multimodal LLM capable of real-time detection and natural language video search from the ground up in a team of 5</li>
+  <li>Architected and implemented an on-premise MLOps solution to streamline and automate continuous data collection, model retraining, and model deployment of a license plate recognition service</li>
+  <li>Designed and maintained a self-hosted CI pipeline (GitHub Actions), fully automating testing of video streaming framework</li>
   <li>Led the backend development of Video Streaming AI framework including IdP, MongoDB, RTSP video streams, 3rd party integrations, docker-compose deployment, and event based notification systems</li>
   <li>Guided customers with technical support and documentations for testing and deployment of the MLOps solution</li>
-</ul>`,
+  </ul>`,
       },
     ],
   },
@@ -87,11 +92,12 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
-  <li>Scaled and refactored a legacy push notification service from 5M to 100M daily pushes, driving 15x revenue growth in 1 year</li>
+  <li>Scaled and refactored a legacy push notification ads service from 5M to 100M daily pushes, driving 15x revenue growth in 1 year</li>
   <li>Optimized large-scale PostgreSQL and Redis databases (40M+ users), reducing critical query times by 80%</li>
-  <li>Built log management pipelines using ELK stack (Elasticsearch, Logstash, Kibana) which cut debugging time in half</li>
   <li>Interviewed 5 candidates, coached 3 interns, reviewed 50+ resumes and 50+ technical tasks</li>
-</ul>`,
+  <li>Built and configured log management pipelines using ELK stack (Elasticsearch, Logstash, Kibana) and server resource monitoring dashboards (Grafana) which cut debugging time in half</li>
+  </ul>`,
+  // <li>Configured load and resource monitoring dashboards using Grafana</li>
       },
     ],
   },
@@ -108,7 +114,8 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         end: { month: '12', year: '2019' },
         desc: `
         <ul>
-        <li>Led backend development for two mobile apps, built from scratch with GraphQL, Node.js, MongoDB, Docker, Nginx, and Redis</li>
+        <li>Led backend development for two mobile apps, built from scratch with GraphQL, Express.js, MongoDB, Docker, Nginx, and Redis</li>
+        <li>Contributed to the full development lifecycle of an autonomous content moderation system from design to deployment.</li>
         </ul>`,
       },
     ],
@@ -126,7 +133,7 @@ export const EDUCATION_EXPERIENCES: EducationModel[] = [
     end: { month: '05', year: '2023' },
     desc: `
 <ul>
-  <li>Published "Code Coverage Criteria for Asynchronous Programs"; Mohammad Ganji, Saba Alimadadi, Frank Tip (ESEC/FSE’23)</li>
+  <li>First Author of "Code Coverage Criteria for Asynchronous Programs"; Mohammad Ganji, Saba Alimadadi, Frank Tip (ESEC/FSE’23)</li>
 </ul>`,
     // hideInResume: true,
   },

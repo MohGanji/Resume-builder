@@ -23,7 +23,7 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
   background: hsl(46,93%,78%);
   border-radius: 4px;
   padding: 0 0.5rem 0 0;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.4rem 0;
 
   &:hover {
     opacity: 0.9;

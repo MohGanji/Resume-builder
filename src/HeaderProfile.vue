@@ -35,7 +35,7 @@ const socialMedia: SocialMedia[] = [
 
 const yearsOfExperience = (
   ((Date.now() - new Date('2017-05-01').getTime()) /
-  (1000 * 60 * 60 * 24 * 365.25)) - 2
+  (1000 * 60 * 60 * 24 * 365.25)) - 3
 ).toFixed();
 </script>
 
@@ -109,7 +109,8 @@ header {
     margin: 0 0 0.5rem;
   }
   @media print {
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
