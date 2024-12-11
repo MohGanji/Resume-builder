@@ -13,28 +13,28 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     country: 'Vancouver, CA',
     type: 'full-time',
     positions: [
-//       {
-//         title: 'Tech Lead',
-//         start: { month: '06', year: '2024' },
-//         end: { month: '10', year: '2024' },
-//         // (Investor fundings were cut)
-//         desc: `
-// <ul>
-//   <li>Led a team of 5 in building a NVR software powered by Multimodal LLM capable of real-time detection and natural language video search from the ground up to a sellable state in 4 months</li>
-//   <li>Communicated with management to clarify requirements and break down objectives into actionable tasks and estimates</li>
-//   <li>Drove the system design of key features such as Licensing, real-time notification, and integration of vector databases</li>
-//   </ul>`,
-//   // <li>Implemented features such as vector similarity search for live video streams and dynamic sensitivity for prompt-based detection</li>
-//   // <li>Streamlined development by prioritizing tasks, reviewing 100+ PRs, and implementing automations to enhance team efficiency</li>
-//       },
+      {
+        title: 'Tech Lead',
+        start: { month: '06', year: '2024' },
+        end: { month: '10', year: '2024' },
+        // (Investor fundings were cut)
+        desc: `
+  <ul>
+    <li>Led a cross-functional team of 5 engineers to develop an NVR software with multimodal RAG capable of 'real-time prompt detection' and 'chat with video' from the ground up to a sellable state in 4 months.</li>
+    <li>Adapted cutting edge open-source technologies such as ChromaDB to support storing video embedding data</li>
+    </ul>`,
+  // <li>Drove the system design of key features such as Licensing, real-time notification, and integration of vector databases</li>
+  // <li>Implemented features such as vector similarity search for live video streams and dynamic sensitivity for prompt-based detection</li>
+  // <li>Streamlined development by prioritizing tasks, reviewing 100+ PRs, and implementing automations to enhance team efficiency</li>
+      },
       {
         title: 'Software Engineer',
         start: { month: '03', year: '2023' },
-        end: { month: '10', year: '2024' },
+        end: { month: '06', year: '2024' },
         // <li>Automated data transform and export of detection and label data into Label Studio</li>
+        // <li>Drove the system design in building a NVR software powered by Multimodal LLM capable of real-time detection and natural language video search from the ground up in a team of 5</li>
         desc: `
   <ul>
-  <li>Drove the system design in building a NVR software powered by Multimodal LLM capable of real-time detection and natural language video search from the ground up in a team of 5</li>
   <li>Architected and implemented an on-premise MLOps solution to streamline and automate continuous data collection, model retraining, and model deployment of a license plate recognition service</li>
   <li>Designed and maintained a self-hosted CI pipeline (GitHub Actions), fully automating testing of video streaming framework</li>
   <li>Led the backend development of Video Streaming AI framework including IdP, MongoDB, RTSP video streams, 3rd party integrations, docker-compose deployment, and event based notification systems</li>

@@ -107,7 +107,6 @@ function getMonthName(monthNumber: string) {
   }
   @media print {
     break-inside: avoid;
-    margin-bottom: 0.5rem;
   }
 }
 .company-icon {

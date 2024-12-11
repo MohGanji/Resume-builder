@@ -48,8 +48,8 @@ const yearsOfExperience = (
     <h1 class="resume-name">Mohammad Ganji</h1>
 
     <div class="contact-info">
-      <a href="mailto:mo@ganji.blog" class="contacts-contact-info">
-        <span class="material-symbols-outlined">mail</span><span>mo@ganji.blog</span>
+      <a href="mailto:mo@ganji.me" class="contacts-contact-info">
+        <span class="material-symbols-outlined">mail</span><span>mo@ganji.me</span>
       </a>
       <a href="tel:+17789575657" class="contacts-contact-info">
         <span class="material-symbols-outlined">call</span><span>+17789575657</span>
@@ -67,7 +67,7 @@ const yearsOfExperience = (
 
     <div class="summary">
       <p>
-        Well-rounded software engineer with {{ yearsOfExperience }} years of experience in build,
+        Generalist software engineer with {{ yearsOfExperience }} years of experience in build,
         deployment, scale, and maintenance of reliable systems.
       </p>
     </div>
@@ -109,8 +109,7 @@ header {
     margin: 0 0 0.5rem;
   }
   @media print {
-    // margin-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
