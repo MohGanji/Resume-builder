@@ -21,8 +21,9 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
   <ul>
     <li>Led a cross-functional team of 5 engineers to develop an NVR software with multimodal RAG capable of 'real-time prompt detection' and 'chat with video' from the ground up to a sellable state in 4 months.</li>
-    <li>Adapted cutting edge open-source technologies such as ChromaDB to support storing video embedding data</li>
+    <li>Adapted cutting edge open-source technologies such as ChromaDB to support storing video embedding data at larger scales</li>
     </ul>`,
+  // <li>Drove the system design of key features (Licensing, real-time Notifications) plus full-stack development of several functionalities</li>
   // <li>Drove the system design of key features such as Licensing, real-time notification, and integration of vector databases</li>
   // <li>Implemented features such as vector similarity search for live video streams and dynamic sensitivity for prompt-based detection</li>
   // <li>Streamlined development by prioritizing tasks, reviewing 100+ PRs, and implementing automations to enhance team efficiency</li>
